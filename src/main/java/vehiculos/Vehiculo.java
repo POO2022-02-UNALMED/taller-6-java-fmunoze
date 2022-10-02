@@ -1,5 +1,5 @@
 package vehiculos;
-class Vehiculo{
+public class Vehiculo{
 
     String placa;
     int puertas;
@@ -22,6 +22,7 @@ class Vehiculo{
     this.traccion = traccion;
     this.fabricante = fabricante;
     CantidadVehiculos++;
+    fabricante.aumentarVentas();
     }
 
     public String vehiculosPorTipo() {
@@ -100,5 +101,4 @@ class Vehiculo{
     public static void setCantidadVehiculos(int cantidadVehiculos) {
         CantidadVehiculos = cantidadVehiculos;
     }
-        
 }
